@@ -22,6 +22,15 @@ sys_getpid(void)
   return myproc()->pid;
 }
 
+unit 64
+sys_getppid(void) {
+  // Gets the current running process structure
+  struct proc *p = myproc();
+
+  // Returns the parent process ID of the current process
+  return p->parent->pid;
+}
+
 uint64
 sys_fork(void)
 {
