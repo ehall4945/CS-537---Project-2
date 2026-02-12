@@ -22,7 +22,7 @@ sys_getpid(void)
   return myproc()->pid;
 }
 
-unit 64
+uint64
 sys_getppid(void) {
   // Gets the current running process structure
   struct proc *p = myproc();

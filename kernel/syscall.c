@@ -101,7 +101,7 @@ extern uint64 sys_unlink(void);
 extern uint64 sys_link(void);
 extern uint64 sys_mkdir(void);
 extern uint64 sys_close(void);
-extern unit64 sys_getppid(void); // added for task 2 step 3
+extern uint64 sys_getppid(void); // added for task 2 step 3
 
 // An array mapping syscall numbers from syscall.h
 // to the function that handles the system call.
